@@ -16,4 +16,15 @@ describe("keyboard", () => {
       expect(handleInput).toHaveBeenCalledWith(1);
     });
   });
+
+    describe("on clear button click", () => {
+        it("should call handleClear", () => {
+            const handleClear = jest.fn();
+            const keyboard = shallow(<Keyboard handleClear={handleClear} />);
+
+            keyboard.find(".clear-button").simulate("click");
+
+            expect(handleClear).toHaveBeenCalled();
+        });
+    });
 });

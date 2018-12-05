@@ -24,7 +24,7 @@ export default class Calculator extends Component {
       <div>
         <Screen display={displayValue} />
         <Keyboard
-          handleInput={this.handleInput}
+          handleValue={this.handleInput}
           handleClear={() => this.handleClear()}
         />
       </div>

@@ -18,7 +18,7 @@ export default class Keyboard extends Component {
           </button>
         ))}
 
-        <button onClick={handleClear}>Clear</button>
+        <button className={"clear-button"} onClick={handleClear}>Clear</button>
       </div>
     );
   }
